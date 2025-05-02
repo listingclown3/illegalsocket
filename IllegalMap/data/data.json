@@ -1,0 +1,22 @@
+{
+    "firstTime": false,
+    "uuid": null,
+    "map": {
+        "x": 0,
+        "y": 0,
+        "scale": 1,
+        "headScale": 1,
+        "checkScale": 1
+    },
+    "dungeonInfo": {
+        "x": 0,
+        "y": 0,
+        "scale": 1
+    },
+    "border": {
+        "scale": 1,
+        "rgbSpeed": 10000
+    },
+    "lastLogServer": null,
+    "lastLogServerNew": null
+}

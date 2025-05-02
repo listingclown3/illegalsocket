@@ -1,0 +1,406 @@
+[
+    {
+        "category": "General",
+        "settings": [
+            {
+                "type": 9,
+                "name": "_paragraphone"
+            },
+            {
+                "type": 2,
+                "name": "MyDiscord"
+            },
+            {
+                "type": 6,
+                "name": "enabled",
+                "value": true
+            },
+            {
+                "type": 2,
+                "name": "MoveMap"
+            },
+            {
+                "type": 5,
+                "name": "backgroundColor",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    179
+                ]
+            },
+            {
+                "type": 6,
+                "name": "hideInBoss",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "chatInfo",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "scoreMilestones",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "announce300",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "announce300Message",
+                "value": "300 Score Reached!"
+            },
+            {
+                "type": 6,
+                "name": "announce270",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "announce270Message",
+                "value": "270 Score Reached!"
+            },
+            {
+                "type": 6,
+                "name": "announceMimic",
+                "value": false
+            },
+            {
+                "type": 4,
+                "name": "announceMimicMessage",
+                "value": "Mimic Dead!"
+            },
+            {
+                "type": 4,
+                "name": "extraMimicMessages",
+                "value": ""
+            },
+            {
+                "type": 7,
+                "name": "dungeonInfo",
+                "value": 0
+            },
+            {
+                "type": 2,
+                "name": "EditDungeonInfo"
+            },
+            {
+                "type": 5,
+                "name": "dungeonInfoBackgroundColor",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    179
+                ]
+            },
+            {
+                "type": 6,
+                "name": "showTotalCrypts",
+                "value": false
+            },
+            {
+                "type": 7,
+                "name": "mapBorder",
+                "value": 0
+            },
+            {
+                "type": 5,
+                "name": "borderColor",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 2,
+                "name": "EditBorderScale"
+            },
+            {
+                "type": 6,
+                "name": "logDungeons",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "logDungeonChatInfo",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "notifyUpdates",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "autoFetchRoomsFromGithub",
+                "value": true
+            }
+        ]
+    },
+    {
+        "category": "Players",
+        "settings": [
+            {
+                "type": 6,
+                "name": "playerHeads",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "useVanillaOwnHead",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "spiritLeapNames",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "showPlayerNames",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "showPlayerRanks",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "showOwnName",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "showPlayerPerformances",
+                "value": false
+            }
+        ]
+    },
+    {
+        "category": "Rooms",
+        "settings": [
+            {
+                "type": 6,
+                "name": "darkenUnexplored",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "scanSetupTree",
+                "value": false
+            },
+            {
+                "type": 5,
+                "name": "witherDoorColor",
+                "value": [
+                    255,
+                    0,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 6,
+                "name": "witherDoorEsp",
+                "value": true
+            },
+            {
+                "type": 5,
+                "name": "witherDoorEspColor",
+                "value": [
+                    255,
+                    0,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 6,
+                "name": "showRoomNames",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "showPuzzleNames",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "roomNameCheckmarkColor",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "showSecrets",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "changePuzzleColor",
+                "value": false
+            },
+            {
+                "type": 7,
+                "name": "checkmarkStyle",
+                "value": 0
+            },
+            {
+                "type": 6,
+                "name": "centerCheckmarks",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "numberCheckmarks",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "whiteCheckBlood",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "scanMimic",
+                "value": false
+            },
+            {
+                "type": 6,
+                "name": "showMimic",
+                "value": true
+            }
+        ]
+    },
+    {
+        "category": "Radar",
+        "settings": [
+            {
+                "type": 6,
+                "name": "starMobEsp",
+                "value": true
+            },
+            {
+                "type": 5,
+                "name": "starMobEspColor",
+                "value": [
+                    0,
+                    255,
+                    0,
+                    255
+                ]
+            },
+            {
+                "type": 6,
+                "name": "radar",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "starMobBorder",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "minibossColors",
+                "value": true
+            },
+            {
+                "type": 6,
+                "name": "radarHeads",
+                "value": true
+            },
+            {
+                "type": 1,
+                "name": "radarHeadScale",
+                "value": 0.5
+            },
+            {
+                "type": 6,
+                "name": "radarHeadsBorder",
+                "value": true
+            },
+            {
+                "type": 5,
+                "name": "radarHeadsBorderColor",
+                "value": [
+                    255,
+                    0,
+                    0,
+                    255
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Credits",
+        "settings": [
+            {
+                "type": 2,
+                "name": "tenios"
+            },
+            {
+                "type": 2,
+                "name": "soopy"
+            },
+            {
+                "type": 2,
+                "name": "squagward"
+            },
+            {
+                "type": 2,
+                "name": "icarus"
+            },
+            {
+                "type": 2,
+                "name": "ctdiscord"
+            }
+        ]
+    },
+    {
+        "category": "GUI",
+        "settings": [
+            {
+                "type": 2,
+                "name": "applybtn"
+            },
+            {
+                "type": 5,
+                "name": "bgColor",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    80
+                ]
+            },
+            {
+                "type": 1,
+                "name": "x",
+                "value": 20
+            },
+            {
+                "type": 1,
+                "name": "y",
+                "value": 20
+            },
+            {
+                "type": 1,
+                "name": "width",
+                "value": 60
+            },
+            {
+                "type": 1,
+                "name": "height",
+                "value": 50
+            }
+        ]
+    }
+]
