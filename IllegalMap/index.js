@@ -34,11 +34,7 @@ export const sendWebSocketMessage = (message) => {
             ws.send(message);
         } catch (e) {
             console.error("WebSocket send error: " + e);
-            // Optionally handle the error, e.g., try reconnecting or disable sending
         }
-    } else {
-        // Optionally log that the message wasn't sent because the socket isn't open
-        // print("Debug: WebSocket not open, message not sent.");
     }
 };
 
@@ -56,8 +52,14 @@ const initializeWebSocket = () => {
     ws.onOpen = () => {
         print("Dmap: WebSocket connection opened.");
         isWsOpen = true;
-        // You could send an initial message here if needed
-        // sendWebSocketMessage(JSON.stringify({ type: "status", message: "ChatTriggers mod connected" }));
+        
+        // --- Send identification message ---
+        const identificationMessage = {
+            type: "identification",
+            sender: "illegalsocket" // In your final version, you'd use Player.getName()
+        };
+        sendWebSocketMessage(JSON.stringify(identificationMessage));
+        print(`Dmap: Sent identification as [illegalsocket]`);
     };
 
     ws.onMessage = (msg) => {
@@ -94,12 +96,14 @@ const initializeWebSocket = () => {
 // Export the state check if needed directly elsewhere (though sendWebSocketMessage is preferred)
 export const isWebSocketOpen = () => isWsOpen;
 
-// --- Initialize WebSocket on script load ---
-initializeWebSocket();
-// You might want to add a command to manually reconnect, e.g., /dmap wsconnect
-// register("command", initializeWebSocket).setName("dmapwsreconnect");
-
-// --- Rest of your index.js code ---
+// --- Initialize WebSocket on script load (with a guard) ---
+// This guard prevents the script from trying to connect more than once
+// when the module is loaded, which can happen in ChatTriggers.
+if (global.dmapInitialized === undefined) {
+    initializeWebSocket();
+    global.dmapInitialized = true;
+}
+// Rest of index.js
 
 register("command", (...args) => {
     if (!args || !args.length || !args[0]) return Config().getConfig().openGui();
