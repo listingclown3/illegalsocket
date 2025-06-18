@@ -9,6 +9,7 @@ import { registerWhen } from "../../BloomCore/utils/Utils";
 import Room from "../components/Room"; // Assuming Room class is available
 import { renderBoxOutline } from "../../BloomCore/RenderUtils";
 
+
 // --- Import the WebSocket send function ---
 // Make sure the path is correct relative to WitherDoorEsp.js
 import { sendWebSocketMessage } from "../index";
@@ -87,10 +88,10 @@ const calculateFootCoordsWithBlockCheck = (doorCoords, floorY, playerPos = null)
     // --- 3. Generate Candidate Foot Positions ---
     // Target blocks are 1 step away from the door center in open directions.
     let candidates = [];
-    if (checks.north) candidates.push({ footX: doorBlockX, footY: floorY, footZ: doorBlockZ - 2, side: "north" });
-    if (checks.south) candidates.push({ footX: doorBlockX, footY: floorY, footZ: doorBlockZ + 2, side: "south" });
-    if (checks.east) candidates.push({ footX: doorBlockX + 2, footY: floorY, footZ: doorBlockZ, side: "east" });
-    if (checks.west) candidates.push({ footX: doorBlockX - 2, footY: floorY, footZ: doorBlockZ, side: "west" });
+    if (checks.north) candidates.push({ footX: doorBlockX + 2, footY: floorY, footZ: doorBlockZ - 3, side: "north" });
+    if (checks.south) candidates.push({ footX: doorBlockX - 2, footY: floorY, footZ: doorBlockZ + 3, side: "south" });
+    if (checks.east) candidates.push({ footX: doorBlockX + 3, footY: floorY, footZ: doorBlockZ - 2, side: "east" });
+    if (checks.west) candidates.push({ footX: doorBlockX - 3, footY: floorY, footZ: doorBlockZ - 2, side: "west" });
 
     // --- 4. Select the Best Candidate ---
     if (candidates.length === 0) {
